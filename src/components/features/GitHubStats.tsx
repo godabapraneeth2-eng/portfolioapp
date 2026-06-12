@@ -99,12 +99,7 @@ export default function GitHubStats() {
     >
       {/* Title */}
       <h3
-        className="text-2xl md:text-3xl font-bold text-center mb-8"
-        style={{
-          background: "linear-gradient(135deg, #00D4FF, #7B61FF)",
-          WebkitBackgroundClip: "text",
-          WebkitTextFillColor: "transparent",
-        }}
+        className="text-2xl md:text-3xl font-bold text-center mb-8 gradient-text"
       >
         Coding Activity
       </h3>

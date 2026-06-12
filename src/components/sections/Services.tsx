@@ -99,7 +99,7 @@ function ServiceCard({ service }: { service: Service }) {
       {/* Icon container */}
       <div className="w-14 h-14 rounded-xl flex items-center justify-center mb-5 transition-transform duration-300 group-hover:scale-110"
         style={{
-          background: "linear-gradient(135deg, rgba(0,212,255,0.2), rgba(123,97,255,0.2))",
+          background: "var(--service-icon-gradient)",
         }}
       >
         <Icon
@@ -137,12 +137,7 @@ export default function Services() {
         transition={{ duration: 0.6 }}
       >
         <h2
-          className="text-4xl md:text-5xl font-bold mb-4"
-          style={{
-            background: "linear-gradient(135deg, #00D4FF, #7B61FF, #00FF88)",
-            WebkitBackgroundClip: "text",
-            WebkitTextFillColor: "transparent",
-          }}
+          className="text-4xl md:text-5xl font-bold mb-4 gradient-text"
         >
           Services
         </h2>

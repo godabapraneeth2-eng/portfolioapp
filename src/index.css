@@ -19,6 +19,20 @@
   
   --glass-bg: 255 255 255;
   --glass-border: 255 255 255;
+
+  /* Theme-specific custom variables */
+  --card-border-conic: conic-gradient(from var(--border-angle, 0deg), #00D4FF, #7B61FF, #00FF88, #00D4FF);
+  --role-text-gradient: linear-gradient(135deg, #00D4FF, #7B61FF);
+  --name-shimmer-gradient: linear-gradient(90deg, rgb(var(--text-white)) 0%, #00D4FF 50%, rgb(var(--text-white)) 100%);
+  --flair-bg-gradient: linear-gradient(135deg, rgba(0, 212, 255, 0.08), rgba(123, 97, 255, 0.08));
+  --ai-glow-gradient: radial-gradient(circle, #00D4FF 0%, #7B61FF 60%, transparent 80%);
+  --progress-bar-gradient: linear-gradient(90deg, #00D4FF, #7B61FF, #00FF88);
+  --service-icon-gradient: linear-gradient(135deg, #00D4FF, #7B61FF, #00FF88);
+  --achievements-radial-glow: radial-gradient(circle, #00FF88 0%, #00D4FF 50%, transparent 80%);
+  --timeline-line-gradient: linear-gradient(180deg, #00D4FF, #7B61FF, #00FF88);
+  --gradient-text-color: linear-gradient(135deg, #00D4FF, #7B61FF, #00D4FF);
+  --gradient-text-static-color: linear-gradient(135deg, #00D4FF, #7B61FF);
+  --gradient-border-color: linear-gradient(135deg, #00D4FF, #7B61FF);
 }
 
 html.light {
@@ -34,6 +48,26 @@ html.light {
   
   --glass-bg: 15 23 42;        /* slate-900 opacity */
   --glass-border: 15 23 42;    /* slate-900 opacity */
+
+  /* Theme-specific custom variables */
+  --card-border-conic: conic-gradient(from var(--border-angle, 0deg), #FF6B00, #00D4FF, #FF6B00);
+  --role-text-gradient: linear-gradient(135deg, #FF6B00, #00D4FF);
+  --name-shimmer-gradient: linear-gradient(90deg, rgb(var(--text-white)) 0%, #FF6B00 50%, rgb(var(--text-white)) 100%);
+  --flair-bg-gradient: linear-gradient(135deg, rgba(255, 107, 0, 0.08), rgba(0, 212, 255, 0.08));
+  --ai-glow-gradient: radial-gradient(circle, rgba(255, 107, 0, 0.15) 0%, rgba(0, 212, 255, 0.15) 60%, transparent 80%);
+  --progress-bar-gradient: linear-gradient(90deg, #FF6B00, #00D4FF);
+  --service-icon-gradient: linear-gradient(135deg, #FF6B00, #00D4FF);
+  --achievements-radial-glow: radial-gradient(circle, rgba(255, 107, 0, 0.15) 0%, rgba(0, 212, 255, 0.15) 50%, transparent 80%);
+  --timeline-line-gradient: linear-gradient(180deg, #FF6B00, #00D4FF);
+  --gradient-text-color: linear-gradient(135deg, #FF6B00, #00D4FF, #FF6B00);
+  --gradient-text-static-color: linear-gradient(135deg, #FF6B00, #00D4FF);
+  --gradient-border-color: linear-gradient(135deg, #FF6B00, #00D4FF);
+}
+
+html.light body {
+  background-image: linear-gradient(135deg, rgba(255, 107, 0, 0.08) 0%, rgba(0, 212, 255, 0.08) 100%);
+  background-attachment: fixed;
+  background-color: transparent;
 }
 
 /* ─── Base Styles ─── */
@@ -155,7 +189,7 @@ body {
 
 /* ─── Gradient Text ─── */
 .gradient-text {
-  background: linear-gradient(135deg, #00D4FF, #7B61FF, #00FF88);
+  background: var(--gradient-text-color);
   background-size: 200% 200%;
   -webkit-background-clip: text;
   background-clip: text;
@@ -164,7 +198,7 @@ body {
 }
 
 .gradient-text-static {
-  background: linear-gradient(135deg, #00D4FF, #7B61FF);
+  background: var(--gradient-text-static-color);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -214,7 +248,7 @@ code, .font-mono {
   inset: 0;
   padding: 1px;
   border-radius: inherit;
-  background: linear-gradient(135deg, #00D4FF, #7B61FF, #00FF88);
+  background: var(--gradient-border-color);
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;

@@ -213,8 +213,7 @@ function HolographicCard() {
         <div
           className="absolute inset-0 rounded-2xl opacity-70"
           style={{
-            background:
-              'conic-gradient(from var(--border-angle, 0deg), #00D4FF, #7B61FF, #00FF88, #00D4FF)',
+            background: 'var(--card-border-conic)',
             animation: 'rotateBorder 4s linear infinite',
           }}
         />
@@ -226,22 +225,22 @@ function HolographicCard() {
             {/* Avatar with rotating ring */}
             <div className="relative mb-4">
               <div
-                className="w-24 h-24 rounded-full overflow-hidden border border-cyber-blue/20 bg-dark-900"
+                className="w-24 h-24 rounded-full overflow-hidden border border-cyber-blue/20 bg-gradient-to-tr from-[#FF6B00] to-[#00D4FF] p-1 dark:p-0 dark:bg-dark-900"
               >
                 <img
                   src={`${import.meta.env.BASE_URL}profile.jpg`}
                   alt="Sai Praneeth"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover rounded-full"
                 />
               </div>
               {/* Rotating dashed ring */}
               <div
-                className="absolute inset-[-6px] rounded-full border-2 border-dashed border-cyber-blue/50"
+                className="absolute inset-[-6px] rounded-full border-2 border-dashed border-[#00D4FF] dark:border-cyber-blue/50"
                 style={{ animation: 'spin 8s linear infinite' }}
               />
               {/* Outer glow ring */}
               <div
-                className="absolute inset-[-12px] rounded-full border border-neon-purple/20"
+                className="absolute inset-[-12px] rounded-full border border-[#FF6B00]/30 dark:border-neon-purple/20"
                 style={{ animation: 'spin 12s linear infinite reverse' }}
               />
             </div>
@@ -340,8 +339,7 @@ function Hero() {
             <span
               className="inline-block bg-clip-text text-transparent"
               style={{
-                backgroundImage:
-                  'linear-gradient(90deg, #FFFFFF 0%, #00D4FF 50%, #FFFFFF 100%)',
+                backgroundImage: 'var(--name-shimmer-gradient)',
                 backgroundSize: '200% 100%',
                 animation: 'shimmer 3s ease-in-out infinite',
               }}
@@ -356,7 +354,7 @@ function Hero() {
               <span
                 className="bg-clip-text text-transparent"
                 style={{
-                  backgroundImage: 'linear-gradient(135deg, #00D4FF, #7B61FF)',
+                  backgroundImage: 'var(--role-text-gradient)',
                 }}
               >
                 {typedRole}

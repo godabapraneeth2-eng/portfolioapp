@@ -213,12 +213,7 @@ export default function Experience() {
         transition={{ duration: 0.6 }}
       >
         <h2
-          className="text-4xl md:text-5xl font-bold mb-4"
-          style={{
-            background: "linear-gradient(135deg, #00D4FF, #7B61FF, #00FF88)",
-            WebkitBackgroundClip: "text",
-            WebkitTextFillColor: "transparent",
-          }}
+          className="text-4xl md:text-5xl font-bold mb-4 gradient-text"
         >
           Journey
         </h2>
@@ -232,19 +227,25 @@ export default function Experience() {
       >
         {/* Center vertical line — desktop */}
         <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-0.5 -translate-x-1/2">
-          <div className="absolute inset-0 rounded-full bg-gradient-to-b from-cyber-blue via-neon-purple to-neon-green opacity-20" />
+          <div
+            className="absolute inset-0 rounded-full opacity-20"
+            style={{ backgroundImage: 'var(--timeline-line-gradient)' }}
+          />
           <motion.div
-            className="absolute top-0 left-0 right-0 rounded-full bg-gradient-to-b from-cyber-blue via-neon-purple to-neon-green"
-            style={{ height: lineHeight }}
+            className="absolute top-0 left-0 right-0 rounded-full"
+            style={{ backgroundImage: 'var(--timeline-line-gradient)', height: lineHeight }}
           />
         </div>
 
         {/* Left line — mobile */}
         <div className="md:hidden absolute left-[7px] top-0 bottom-0 w-0.5">
-          <div className="absolute inset-0 rounded-full bg-gradient-to-b from-cyber-blue via-neon-purple to-neon-green opacity-20" />
+          <div
+            className="absolute inset-0 rounded-full opacity-20"
+            style={{ backgroundImage: 'var(--timeline-line-gradient)' }}
+          />
           <motion.div
-            className="absolute top-0 left-0 right-0 rounded-full bg-gradient-to-b from-cyber-blue via-neon-purple to-neon-green"
-            style={{ height: lineHeight }}
+            className="absolute top-0 left-0 right-0 rounded-full"
+            style={{ backgroundImage: 'var(--timeline-line-gradient)', height: lineHeight }}
           />
         </div>
 

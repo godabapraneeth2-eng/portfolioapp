@@ -226,7 +226,7 @@ const LoadingScreen: React.FC<LoadingScreenProps> = ({ onComplete }) => {
               className="h-full rounded-full"
               style={{
                 width: `${progress}%`,
-                background: 'linear-gradient(90deg, #00D4FF, #7B61FF, #00FF88)',
+                background: 'var(--progress-bar-gradient)',
                 boxShadow: '0 0 10px rgba(0,212,255,0.5), 0 0 20px rgba(0,212,255,0.2)',
                 transition: 'width 0.1s ease-out',
               }}

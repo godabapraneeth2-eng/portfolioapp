@@ -420,7 +420,7 @@ export default function Projects() {
       {/* ambient */}
       <div
         className="pointer-events-none absolute bottom-0 right-0 w-[600px] h-[600px] rounded-full opacity-15 blur-[140px]"
-        style={{ background: "radial-gradient(circle,#7B61FF 0%,#00D4FF 60%,transparent 80%)" }}
+        style={{ background: "var(--ai-glow-gradient)" }}
       />
 
       {/* header */}
@@ -431,14 +431,7 @@ export default function Projects() {
         viewport={{ once: true, amount: 0.3 }}
         transition={{ duration: 0.7 }}
       >
-        <h2
-          className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4"
-          style={{
-            background: "linear-gradient(135deg,#00D4FF 0%,#7B61FF 50%,#00FF88 100%)",
-            WebkitBackgroundClip: "text",
-            WebkitTextFillColor: "transparent",
-          }}
-        >
+        <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 gradient-text">
           Featured Projects
         </h2>
         <p className="text-lg max-w-xl mx-auto" style={{ color: "#94A3B8" }}>

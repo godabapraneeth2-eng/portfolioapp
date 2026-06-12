@@ -130,8 +130,7 @@ function AnimatedStatCard({ stat, index }: { stat: StatCard; index: number }) {
       <div
         className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
         style={{
-          background:
-            'conic-gradient(from 0deg, #00D4FF, #7B61FF, #00FF88, #00D4FF)',
+          background: 'var(--card-border-conic)',
         }}
       />
 
@@ -146,7 +145,7 @@ function AnimatedStatCard({ stat, index }: { stat: StatCard; index: number }) {
           <span
             className="bg-clip-text text-transparent"
             style={{
-              backgroundImage: 'linear-gradient(135deg, #00D4FF, #7B61FF)',
+              backgroundImage: 'var(--role-text-gradient)',
             }}
           >
             {isInView ? animatedValue : '0'}
@@ -241,7 +240,7 @@ exploring new technologies to build the future of intelligent digital experience
             <span
               className="bg-clip-text text-transparent"
               style={{
-                backgroundImage: 'linear-gradient(135deg, #00D4FF, #7B61FF)',
+                backgroundImage: 'var(--role-text-gradient)',
               }}
             >
               About Me
@@ -310,8 +309,7 @@ exploring new technologies to build the future of intelligent digital experience
               <div
                 className="rounded-2xl p-4 flex items-center justify-center gap-3"
                 style={{
-                  background:
-                    'linear-gradient(135deg, rgba(0,212,255,0.08), rgba(123,97,255,0.08))',
+                  background: 'var(--flair-bg-gradient)',
                 }}
               >
                 <Rocket size={18} className="text-cyber-blue" />

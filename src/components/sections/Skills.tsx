@@ -311,7 +311,7 @@ function FloatingNodes() {
         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12
                    rounded-full flex items-center justify-center z-10"
         style={{
-          background: 'linear-gradient(135deg, #00D4FF, #7B61FF)',
+          background: 'var(--role-text-gradient)',
           boxShadow: '0 0 30px rgba(0,212,255,0.3)',
         }}
       >
@@ -376,7 +376,7 @@ function Skills() {
             <span
               className="bg-clip-text text-transparent"
               style={{
-                backgroundImage: 'linear-gradient(135deg, #00D4FF, #7B61FF)',
+                backgroundImage: 'var(--role-text-gradient)',
               }}
             >
               Tech Arsenal

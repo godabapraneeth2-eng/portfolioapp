@@ -132,12 +132,7 @@ export default function Contact() {
         transition={{ duration: 0.6 }}
       >
         <h2
-          className="text-4xl md:text-5xl font-bold mb-4"
-          style={{
-            background: "linear-gradient(135deg, #00D4FF, #7B61FF, #00FF88)",
-            WebkitBackgroundClip: "text",
-            WebkitTextFillColor: "transparent",
-          }}
+          className="text-4xl md:text-5xl font-bold mb-4 gradient-text"
         >
           Get In Touch
         </h2>

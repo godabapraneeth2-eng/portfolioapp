@@ -65,8 +65,7 @@ export default function Achievements() {
       <div
         className="pointer-events-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full opacity-15 blur-[160px]"
         style={{
-          background:
-            "radial-gradient(circle,#00FF88 0%,#00D4FF 50%,transparent 80%)",
+          background: "var(--achievements-radial-glow)",
         }}
       />
 
@@ -79,13 +78,7 @@ export default function Achievements() {
         transition={{ duration: 0.7 }}
       >
         <h2
-          className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4"
-          style={{
-            background:
-              "linear-gradient(135deg,#00D4FF 0%,#7B61FF 50%,#00FF88 100%)",
-            WebkitBackgroundClip: "text",
-            WebkitTextFillColor: "transparent",
-          }}
+          className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 gradient-text"
         >
           Achievements
         </h2>
@@ -115,8 +108,7 @@ export default function Achievements() {
               <div
                 className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
                 style={{
-                  background:
-                    "conic-gradient(from var(--angle,0deg),#00D4FF,#7B61FF,#00FF88,#00D4FF)",
+                  background: "var(--card-border-conic)",
                   animation: "spinBorder 4s linear infinite",
                 }}
               />
