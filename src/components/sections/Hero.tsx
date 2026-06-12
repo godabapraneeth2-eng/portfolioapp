@@ -226,11 +226,14 @@ function HolographicCard() {
             {/* Avatar with rotating ring */}
             <div className="relative mb-4">
               <div
-                className="w-24 h-24 rounded-full"
-                style={{
-                  background: 'linear-gradient(135deg, #00D4FF, #7B61FF)',
-                }}
-              />
+                className="w-24 h-24 rounded-full overflow-hidden border border-cyber-blue/20 bg-dark-900"
+              >
+                <img
+                  src={`${import.meta.env.BASE_URL}profile.jpg`}
+                  alt="Sai Praneeth"
+                  className="w-full h-full object-cover"
+                />
+              </div>
               {/* Rotating dashed ring */}
               <div
                 className="absolute inset-[-6px] rounded-full border-2 border-dashed border-cyber-blue/50"
